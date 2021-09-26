@@ -23,22 +23,15 @@ namespace Guess_the_Number_Game
                 {
                     Console.WriteLine("Number is high!");
                 }
-                else
-                {
-                    continue;
-                }
             }
             // To applaud the user after guessing correctly
             if (userGuessCount <= 2)
             {
                 Console.WriteLine("Excellent!");
             }
-            else if (userGuessCount <= 5)
+            else if (userGuessCount >= 3 && userGuessCount <= 5)
             {
-                if (userGuessCount > 2)
-                {
                     Console.WriteLine("Good!");
-                }
             }
             else
             {
